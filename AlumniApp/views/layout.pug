@@ -1,7 +1,8 @@
-doctype html
-html
-  head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-  body
+include Components/head.pug
+body
+    block header
+        include Components/header.pug
     block content
+
+    block footer
+        include Components/footer.pug
