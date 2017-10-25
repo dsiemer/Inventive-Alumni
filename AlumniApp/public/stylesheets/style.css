@@ -9,6 +9,9 @@ ul.topnav {
 }
 
 ul.topnav li {float: left;}
+ul.topnav li.links {
+	padding-top:25px;
+}
 
 ul.topnav li a{
     display: block;
@@ -21,7 +24,6 @@ ul.topnav li a{
 }
 
 ul.topnav li.createAccount{
-	background-color:#68C9FB;
     color: white;
     display: block;
     text-decoration:none;
@@ -35,7 +37,7 @@ ul.topnav li.createAccount{
 
 ul.topnav li.image{
 	margin-left:3%;
-	margin-right:20%;
+	margin-right:15%;
 }
 ul.topnav li.image a:hover{
 	background-color:#333;
@@ -65,6 +67,10 @@ label{
     font-size: 100%;
     vertical-align: baseline;
     background: transparent;
+}
+.ClosedTag{
+    background-color:black;
+    color:white;
 }
 
 

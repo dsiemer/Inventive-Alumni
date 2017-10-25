@@ -5,9 +5,9 @@ block content
         .SideBar
             .SelectionContainer
                 .SelectionType
-                    .TypeName
+                    .TypeName.OpenTag#Type1
                        h3 Job Role
-                    .SelectionOptions
+                    .SelectionOptions#Selection1
                        div
                            input.SelectOption(type="checkbox")
                            lable.InputName Web Developer
@@ -29,10 +29,11 @@ block content
                        div
                            input.SelectOption(type="checkbox")
                            lable.InputName Product Manager
+                    .SelectionOptionEnd
                 .SelectionType
-                    .TypeName
+                    .TypeName.OpenTag#Type2
                         h3 Seeking
-                    .SelectionOptions
+                    .SelectionOptions#Selection2
                        div
                            input.SelectOption(type="checkbox")
                            lable.InputName Full Time
@@ -43,27 +44,27 @@ block content
                            input.SelectOption(type="checkbox")
                            lable.InputName Apprentice
                 .SelectionType
-                    .TypeName
+                    .TypeName.OpenTag#Type3
                         h3 Location
-                    .SelectionOptions
+                    .SelectionOptions#Selection3
                        div
                            input.SelectOption(type="search" placeholder="search for a location")
                        div
                            input.SelectOption(type="checkbox")
                            lable.InputName Show alumni willing to relocate
                 .SelectionTag
-                    .TypeName
+                    .TypeName.OpenTag#Type4
                         h3 GA Course History
-                    .SelectionOptions
+                    .SelectionOptions#Selection4
                        div
                            input.SelectOption(type="select" placeholder="select...")
                        div
                            input.SelectOption(type="checkbox")
                            lable.InputName Need Update
                 .SelectionType
-                    .TypeName
+                    .TypeName.OpenTag#Type5
                         h3 Skills
-                    .SelectionOptions
+                    .SelectionOptions#Selection5
                        div
                            input.SelectOption(type="search" placeholder="Search or select...")
                 .SelectionOptions
@@ -94,4 +95,3 @@ block content
                                ul.CardSkills
                                    li.SkillItem react
                                    li.SkillItem node
-
