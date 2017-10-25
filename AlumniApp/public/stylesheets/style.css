@@ -16,6 +16,12 @@ ul.topnav li.links a{
     text-align: center;
     padding:30px 60px;
     text-decoration: none;
+    font-size:18px;
+    font-family:"Circular", Helvetica, sans-serif;
+}
+ul.topnav li{
+	margin:20px;
+
 }
 
 ul.topnav li a:hover:not(.active) {background-color: #111;}
@@ -23,7 +29,11 @@ ul.topnav li a:hover:not(.active) {background-color: #111;}
 @media screen and (max-width: 600px){
     ul.topnav li.right, 
     ul.topnav li {float: none;}
-    .alumni-logo{float:center;}
+    .image{text-align:center;}
+}
+
+ul.topnav li.image{
+	margin-right:50%;
 }
 ul.topnav li.image a:hover{
 	background-color:#333;
