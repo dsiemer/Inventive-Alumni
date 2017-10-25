@@ -1,0 +1,25 @@
+{
+  "name": "inventive-alumni",
+  "version": "1.0.0",
+  "description": "Inventive-Alumni",
+  "main": "index.js",
+  "dependencies": {
+    "express": "^4.16.2",
+    "nodemon": "^1.12.1",
+    "pug": "^2.0.0-rc.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dsiemer/Inventive-Alumni.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dsiemer/Inventive-Alumni/issues"
+  },
+  "homepage": "https://github.com/dsiemer/Inventive-Alumni#readme"
+}

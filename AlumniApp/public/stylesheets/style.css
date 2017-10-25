@@ -1,4 +1,76 @@
-.logo{
+body {margin: 0;}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
 }
+
+ul.topnav li {float: left;}
+ul.topnav li.links {
+	padding-top:25px;
+}
+
+ul.topnav li a{
+    display: block;
+    color: white;
+    text-align: center;
+    padding:30px 60px;
+    text-decoration: none;
+    font-size:15px;
+    font-family:"Circular", Helvetica, sans-serif;
+}
+
+ul.topnav li.createAccount{
+    color: white;
+    display: block;
+    text-decoration:none;
+	border-radius:10px;
+}
+@media screen and (max-width: 600px){
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+    .image{text-align:center;}
+}
+
+ul.topnav li.image{
+	margin-left:3%;
+	margin-right:15%;
+}
+ul.topnav li.image a:hover{
+	background-color:#333;
+
+}
+
 .alumni-logo{
+	width:150px;
 }
+div{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+label{
+        margin-bottom: 0.25rem;
+    line-height: 1.4;
+    cursor: pointer;
+        margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+.ClosedTag{
+    background-color:black;
+    color:white;
+}
+
+

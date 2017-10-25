@@ -1,5 +1,97 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+    .MainContainer
+        .SideBar
+            .SelectionContainer
+                .SelectionType
+                    .TypeName.OpenTag#Type1
+                       h3 Job Role
+                    .SelectionOptions#Selection1
+                       div
+                           input.SelectOption(type="checkbox")
+                           lable.InputName Web Developer
+                       div
+                           input.SelectOption(type="checkbox")
+                           lable.InputName Android Developer
+                       div
+                           input.SelectOption(type="checkbox")
+                           lable.InputName iOS Developer
+                       div
+                           input.SelectOption(type="checkbox")
+                           lable.InputName UX Designer
+                       div
+                           input.SelectOption(type="checkbox")
+                           lable.InputName Data Scientist
+                       div
+                           input.SelectOption(type="checkbox")
+                           lable.InputName Data Analyst
+                       div
+                           input.SelectOption(type="checkbox")
+                           lable.InputName Product Manager
+                    .SelectionOptionEnd
+                .SelectionType
+                    .TypeName.OpenTag#Type2
+                        h3 Seeking
+                    .SelectionOptions#Selection2
+                       div
+                           input.SelectOption(type="checkbox")
+                           lable.InputName Full Time
+                       div
+                           input.SelectOption(type="checkbox")
+                           lable.InputName Freelance
+                       div
+                           input.SelectOption(type="checkbox")
+                           lable.InputName Apprentice
+                .SelectionType
+                    .TypeName.OpenTag#Type3
+                        h3 Location
+                    .SelectionOptions#Selection3
+                       div
+                           input.SelectOption(type="search" placeholder="search for a location")
+                       div
+                           input.SelectOption(type="checkbox")
+                           lable.InputName Show alumni willing to relocate
+                .SelectionTag
+                    .TypeName.OpenTag#Type4
+                        h3 GA Course History
+                    .SelectionOptions#Selection4
+                       div
+                           input.SelectOption(type="select" placeholder="select...")
+                       div
+                           input.SelectOption(type="checkbox")
+                           lable.InputName Need Update
+                .SelectionType
+                    .TypeName.OpenTag#Type5
+                        h3 Skills
+                    .SelectionOptions#Selection5
+                       div
+                           input.SelectOption(type="search" placeholder="Search or select...")
+                .SelectionOptions
+                   .loneOption
+                       input.SelectOption(type="checkbox")
+                       lable.InputName Show alumni not looking for work
+
+
+
+        .ProfileList
+            .card
+                .cardInfo
+                   a.CardLink(href="alumniDetails") 
+                       .LinkContent
+                           img.CardImg(src="../public/images/drake.jpg")
+                           .CardInnerContent
+                               .CardNameOrgin
+                                   h2.Name Drake Siemer
+                                   .CardRightCorner
+                                       p.Orgin texas
+                               div.CardQuote
+                                   dedicated learner
+                               div.CardAchievements
+                                   div
+                                       img(src="")
+                                   div
+                                       p working at inventive
+                               ul.CardSkills
+                                   li.SkillItem react
+                                   li.SkillItem node
