@@ -1,3 +1,30 @@
+.mainContent{
+	display:flex;
+	flex-wrap:wrap;
+}
 .ContainerSummary{
 	background-color:black;
+	color:#67C8FD;
+	text-align:center;
+	height:auto;
+	padding:30px;
+}
+.content{
+	max-width:45%;
+}
+.quoteLines{
+	display:block;
+}
+.line{
+	width:150px;
+	height:10px;
+	background-color:#67C8FD;
+}
+.alumniImage{
+	border-radius:50%;
+	width:150px;
+	z-index:1;
+}
+.fa-quote-left{
+	color:#67C8FD;
 }
