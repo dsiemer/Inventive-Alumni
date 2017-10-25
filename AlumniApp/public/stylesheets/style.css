@@ -1,51 +1,30 @@
-body {margin: 0;}
-
-ul.topnav {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333;
-}
-
-ul.topnav li {float: left;}
-ul.topnav li.links {
-	padding-top:25px;
-}
-
-ul.topnav li a{
-    display: block;
-    color: white;
-    text-align: center;
-    padding:30px 60px;
-    text-decoration: none;
-    font-size:15px;
-    font-family:"Circular", Helvetica, sans-serif;
-}
-
-ul.topnav li.createAccount{
-    color: white;
-    display: block;
-    text-decoration:none;
-	border-radius:10px;
-}
 @media screen and (max-width: 600px){
-    ul.topnav li.right, 
-    ul.topnav li {float: none;}
-    .image{text-align:center;}
+    ul.nav li, 
+    ul.nav li {float: none;}
+    .alumni-logo{text-align:center;}
 }
 
-ul.topnav li.image{
-	margin-left:3%;
-	margin-right:15%;
+ul.nav li{
+	float:right;
+	padding-top:38px;
 }
-ul.topnav li.image a:hover{
+ul.nav li a{
+	color:white;
+}
+
+ul.nav li a:hover{
+	color:#333;
+}
+
+ul.nav{
 	background-color:#333;
-
+	margin-bottom:5px;
+	padding-top:10px;
 }
-
 .alumni-logo{
 	width:150px;
+	float:left;
+	margin-left:80px;
 }
 div{
     margin: 0;
