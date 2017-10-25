@@ -10,24 +10,32 @@ ul.topnav {
 
 ul.topnav li {float: left;}
 
-ul.topnav li a {
+ul.topnav li a{
     display: block;
     color: white;
     text-align: center;
     padding:30px 60px;
     text-decoration: none;
+    font-size:15px;
+    font-family:"Circular", Helvetica, sans-serif;
 }
 
-ul.topnav li a:hover:not(.active) {background-color: #111;}
-
-ul.topnav li a.active {
-border-top:solid 1px #4CAF50;
-border-left:solid 1px #4CAF50;
-border-right:solid 1px #4CAF50;}
-
+ul.topnav li.createAccount{
+	background-color:#68C9FB;
+    color: white;
+    display: block;
+    text-decoration:none;
+	border-radius:10px;
+}
 @media screen and (max-width: 600px){
     ul.topnav li.right, 
     ul.topnav li {float: none;}
+    .image{text-align:center;}
+}
+
+ul.topnav li.image{
+	margin-left:3%;
+	margin-right:20%;
 }
 ul.topnav li.image a:hover{
 	background-color:#333;
@@ -37,6 +45,26 @@ ul.topnav li.image a:hover{
 .alumni-logo{
 	width:150px;
 }
-.tabs{
-	height:50px;
+div{
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
 }
+label{
+        margin-bottom: 0.25rem;
+    line-height: 1.4;
+    cursor: pointer;
+        margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+
