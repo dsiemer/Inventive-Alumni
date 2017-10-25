@@ -8,6 +8,11 @@
 	text-align:center;
 	height:auto;
 	padding:30px;
+	flex:1;
+}
+p.summary{
+	max-width:550px;
+	margin:auto;
 }
 .content{
 	max-width:45%;
