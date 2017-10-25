@@ -1,21 +1,48 @@
 /* side bar options */
 .SideBar{
-	background-color:red;
+	background-color:;
 	width:30%;
 	display:inline-block;
 }
 .SelectionContainer{
-background-color: gray;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
 }
 .SelectionTag{
-background-color:lightgray;
+
 }
 .SelectionType{
 	
 }
-.SelectionOptions{
-background-color:darkgray;
+.TypeName{
+	display: block;
+    padding: .25em .9em;
+    font-weight: 700;
+    font-size: 1em;
+    margin-bottom: .5em;
+    cursor: pointer;
+    color: #fff;
+    background: #000;
+    border: none;
 }
+.SelectionOptions{
+    padding: .2em .9em;
+}
+.InputName{
+	    box-sizing: border-box;
+    flex-basis: 83.333%;
+    max-width: 83.333%;
+     flex: 0 0 auto;
+    padding-right: .5rem;
+    padding-left: .5rem;
+
+}
+
 
 
 /* Profile list */
