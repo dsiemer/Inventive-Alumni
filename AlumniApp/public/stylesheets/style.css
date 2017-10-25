@@ -10,7 +10,7 @@ ul.topnav {
 
 ul.topnav li {float: left;}
 
-ul.topnav li a {
+ul.topnav li.links a{
     display: block;
     color: white;
     text-align: center;
@@ -20,14 +20,10 @@ ul.topnav li a {
 
 ul.topnav li a:hover:not(.active) {background-color: #111;}
 
-ul.topnav li a.active {
-border-top:solid 1px #4CAF50;
-border-left:solid 1px #4CAF50;
-border-right:solid 1px #4CAF50;}
-
 @media screen and (max-width: 600px){
     ul.topnav li.right, 
     ul.topnav li {float: none;}
+    .alumni-logo{float:center;}
 }
 ul.topnav li.image a:hover{
 	background-color:#333;
@@ -36,7 +32,5 @@ ul.topnav li.image a:hover{
 
 .alumni-logo{
 	width:150px;
-}
-.tabs{
-	height:50px;
+	margin-right:40%;
 }
