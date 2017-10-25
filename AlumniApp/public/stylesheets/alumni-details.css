@@ -10,6 +10,8 @@
 	border:solid black 0.5px;
 }
 
+body {margin: 0;}
+
 
 /*Box at the top with quote*/
 .mainContent{
@@ -100,4 +102,11 @@ p.summary{
 .header{
 	font-family:"PFDinTextCompProBold", Impact, Arial;
 	font-weight:bolder;
+}
+
+/*my experience section*/
+
+.MyExperience{
+	background-color:#F6F6F6;
+	height:800px;
 }
