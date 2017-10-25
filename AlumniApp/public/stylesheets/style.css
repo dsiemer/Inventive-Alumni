@@ -68,5 +68,9 @@ label{
     vertical-align: baseline;
     background: transparent;
 }
+.ClosedTag{
+    background-color:black;
+    color:white;
+}
 
 

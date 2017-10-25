@@ -26,9 +26,16 @@
     font-size: 1em;
     margin-bottom: .5em;
     cursor: pointer;
-    color: #fff;
-    background: #000;
     border: none;
+}
+.OpenTag{
+    background-color:black;
+    color:white;
+}
+.ClosedTag{
+    background-color:white;
+    color:black;
+    border:1px solid black;
 }
 .SelectionOptions{
     padding: .2em .9em;
