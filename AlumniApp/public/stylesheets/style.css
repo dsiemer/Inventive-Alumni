@@ -1,4 +1,42 @@
-.navbar{
-	display:inline-block;
-	background-color:darkblue;
+body {margin: 0;}
+
+ul.topnav {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+ul.topnav li {float: left;}
+
+ul.topnav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding:30px 60px;
+    text-decoration: none;
+}
+
+ul.topnav li a:hover:not(.active) {background-color: #111;}
+
+ul.topnav li a.active {
+border-top:solid 1px #4CAF50;
+border-left:solid 1px #4CAF50;
+border-right:solid 1px #4CAF50;}
+
+@media screen and (max-width: 600px){
+    ul.topnav li.right, 
+    ul.topnav li {float: none;}
+}
+ul.topnav li.image a:hover{
+	background-color:#333;
+
+}
+
+.alumni-logo{
+	width:150px;
+}
+.tabs{
+	height:50px;
 }
