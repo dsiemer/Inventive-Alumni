@@ -46,6 +46,10 @@ label{
     vertical-align: baseline;
     background: transparent;
 }
+.ClosedTag{
+    background-color:black;
+    color:white;
+}
 
 .footerStyles{
 	background-color:#A9A9A9;
