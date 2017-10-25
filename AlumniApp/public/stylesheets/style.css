@@ -14,17 +14,26 @@ ul.topnav li a {
     display: block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding:20px 50px;
     text-decoration: none;
 }
 
 ul.topnav li a:hover:not(.active) {background-color: #111;}
 
-ul.topnav li a.active {background-color: #4CAF50;}
-
-ul.topnav li.right {float: right;}
+ul.topnav li a.active {
+border-top:solid 1px #4CAF50;
+border-left:solid 1px #4CAF50;
+border-right:solid 1px #4CAF50;}
 
 @media screen and (max-width: 600px){
     ul.topnav li.right, 
     ul.topnav li {float: none;}
+}
+ul.topnav li.image a:hover{
+	background-color:#333;
+
+}
+
+.alumni-logo{
+	width:150px;
 }
