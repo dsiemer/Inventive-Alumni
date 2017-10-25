@@ -1,5 +1,6 @@
 ul.nav{
 	background-color:#333;
+	margin-bottom:5px;
 }
 ul.nav li{
 	float:right;
@@ -7,6 +8,7 @@ ul.nav li{
 ul li a{
 	color:white;
 	text-decoration:none;
+	margin-top:38px;
 }
 ul li a:hover{
 	color:black;
@@ -21,6 +23,7 @@ ul li a:hover{
 .alumni-logo{
 	width:150px;
 	float:left;
+	margin-left:50px;
 }
 div{
     margin: 0;

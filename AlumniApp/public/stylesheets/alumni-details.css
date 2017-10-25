@@ -71,14 +71,12 @@ p.summary{
 .talk{
 	color:black;
 	background-color:#FAD147;
-	border-bottom:solid black 2px;
 	padding:15px 32px;
 	border-radius:4px;
 }
 .talk:hover{
 	color:black;
-	background-color:#facb33;
-	border-bottom:solid black 2px;	
+	background-color:#facb33;	
 	text-decoration:none;
 }
 /*Background coloring to the div holding all alumni information*/
@@ -107,6 +105,5 @@ p.summary{
 /*my experience section*/
 
 .MyExperience{
-	background-color:#F6F6F6;
 	height:800px;
 }
