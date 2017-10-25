@@ -20,14 +20,12 @@ ul.topnav li a{
     font-family:"Circular", Helvetica, sans-serif;
 }
 
-ul.topnav li a.buttonLink{
+ul.topnav li.createAccount{
 	background-color:#68C9FB;
     color: white;
     display: block;
     text-decoration:none;
 	border-radius:10px;
-	font-size:15px;
-	padding:15px 30px;
 }
 @media screen and (max-width: 600px){
     ul.topnav li.right, 
