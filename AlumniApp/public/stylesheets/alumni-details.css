@@ -95,9 +95,9 @@ p.summary{
 	top:-60px;
 	left:500px;
 	padding:30px;
+	overflow:auto;
 }
 .header{
 	font-family:"PFDinTextCompProBold", Impact, Arial;
-
 	font-weight:bolder;
 }
