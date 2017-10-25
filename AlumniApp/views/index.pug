@@ -3,6 +3,70 @@ extends layout
 block content
     .MainContainer
         .SideBar
-           h2 search actions
+            .SelectionContainer
+                .SelectionTag
+                    h3 Job Role
+                    .SelectionOptions
+                       div
+                           input.SelectOption(type="checkbox")
+                           lable Web Developer
+                       div
+                           input.SelectOption(type="checkbox")
+                           lable Android Developer
+                       div
+                           input.SelectOption(type="checkbox")
+                           lable iOS Developer
+                       div
+                           input.SelectOption(type="checkbox")
+                           lable UX Designer
+                       div
+                           input.SelectOption(type="checkbox")
+                           lable Data Scientist
+                       div
+                           input.SelectOption(type="checkbox")
+                           lable Data Analyst
+                       div
+                           input.SelectOption(type="checkbox")
+                           lable Product Manager
+                .SelectionTag
+                    h3 Seeking
+                    .SelectionOptions
+                       div
+                           input.SelectOption(type="checkbox")
+                           lable Full Time
+                       div
+                           input.SelectOption(type="checkbox")
+                           lable Freelance
+                       div
+                           input.SelectOption(type="checkbox")
+                           lable Apprentice
+                .SelectionTag
+                    h3 Location
+                    .SelectionOptions
+                       div
+                           input.SelectOption(type="search" placeholder="search for a location")
+                       div
+                           input.SelectOption(type="checkbox")
+                           lable Show alumni willing to relocate
+                .SelectionTag
+                    h3 GA Course History
+                    .SelectionOptions
+                       div
+                           input.SelectOption(type="select" placeholder="select...")
+                       div
+                           input.SelectOption(type="checkbox")
+                           lable Need Update
+                .SelectionTag
+                    h3 Skills
+                    .SelectionOptions
+                       div
+                           input.SelectOption(type="search" placeholder="Search or select...")
+                .SelectionOptions
+                   .loneOption
+                       input.SelectOption(type="checkbox")
+                       lable Show alumni not looking for work
+
+
+
         .ProfileList
            h2 profile list
