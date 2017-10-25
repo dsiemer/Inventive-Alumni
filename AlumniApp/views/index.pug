@@ -4,8 +4,9 @@ block content
     .MainContainer
         .SideBar
             .SelectionContainer
-                .SelectionTag
-                    h3 Job Role
+                .SelectionType
+                    .TypeName
+                       h3 Job Role
                     .SelectionOptions
                        div
                            input.SelectOption(type="checkbox")
@@ -28,8 +29,9 @@ block content
                        div
                            input.SelectOption(type="checkbox")
                            lable Product Manager
-                .SelectionTag
-                    h3 Seeking
+                .SelectionType
+                    .TypeName
+                        h3 Seeking
                     .SelectionOptions
                        div
                            input.SelectOption(type="checkbox")
@@ -40,8 +42,9 @@ block content
                        div
                            input.SelectOption(type="checkbox")
                            lable Apprentice
-                .SelectionTag
-                    h3 Location
+                .SelectionType
+                    .TypeName
+                        h3 Location
                     .SelectionOptions
                        div
                            input.SelectOption(type="search" placeholder="search for a location")
@@ -49,15 +52,17 @@ block content
                            input.SelectOption(type="checkbox")
                            lable Show alumni willing to relocate
                 .SelectionTag
-                    h3 GA Course History
+                    .TypeName
+                        h3 GA Course History
                     .SelectionOptions
                        div
                            input.SelectOption(type="select" placeholder="select...")
                        div
                            input.SelectOption(type="checkbox")
                            lable Need Update
-                .SelectionTag
-                    h3 Skills
+                .SelectionType
+                    .TypeName
+                        h3 Skills
                     .SelectionOptions
                        div
                            input.SelectOption(type="search" placeholder="Search or select...")

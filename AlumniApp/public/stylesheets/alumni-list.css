@@ -1,9 +1,24 @@
+/* side bar options */
 .SideBar{
 	background-color:red;
 	width:30%;
 	display:inline-block;
-
 }
+.SelectionContainer{
+background-color: gray;
+}
+.SelectionTag{
+background-color:lightgray;
+}
+.SelectionType{
+	
+}
+.SelectionOptions{
+background-color:darkgray;
+}
+
+
+/* Profile list */
 .ProfileList{
 	background-color:blue;
 	width:60%;
