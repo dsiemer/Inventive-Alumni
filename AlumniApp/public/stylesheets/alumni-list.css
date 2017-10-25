@@ -1,0 +1,12 @@
+.SideBar{
+	background-color:red;
+	width:30%;
+	display:inline-block;
+
+}
+.ProfileList{
+	background-color:blue;
+	width:60%;
+	display:inline-block;
+
+}
