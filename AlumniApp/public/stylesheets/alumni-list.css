@@ -25,3 +25,42 @@ background-color:darkgray;
 	display:inline-block;
 
 }
+.card{
+	width:500px;
+	background-color:black;
+}
+.cardInfo{
+	
+}
+.CardLink{
+	
+}
+.LinkContent{
+
+}
+.CardImg{
+
+}
+.CardInnerContent{
+
+}
+.CardNameOrgin{
+ display:inline
+}
+.Name{
+ display: inline-block;
+}
+.Orgin{
+	float: right;
+	display: inline-block;
+	
+}
+.CardQuote{
+
+}
+.CardAchievements{
+
+}
+.CardSkills{
+
+}
