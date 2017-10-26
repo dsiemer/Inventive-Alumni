@@ -14,6 +14,8 @@ var mongoosePaginate = require('mongoose-paginate');
 var index = require('./routes/index');
 var users = require('./routes/users');
 var alumniDetails = require('./routes/alumniDetails');
+var userform = require('./routes/userform');
+
 
 var app = express();
 

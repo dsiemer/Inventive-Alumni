@@ -1,0 +1,123 @@
+/*Extras*/
+.line{
+	width:110px;
+	height:5px;
+	background-color:black;
+}
+.line2{
+	background-color:black;
+	color:black;
+	border:solid black 0.5px;
+}
+
+body {margin: 0;}
+
+
+/*Box at the top with quote*/
+.mainContent{
+	display:flex;
+	flex-wrap:wrap;
+}
+.ContainerSummary{
+	color:#67C8FD;
+	background-color:black;
+	text-align:center;
+	height:auto;
+	padding:30px;
+	font-family:"Circular", Helvetica, sans-serif;
+    overflow: hidden;
+}
+p.summary{
+	max-width:750px;
+	margin:auto;
+	line-height:35px;
+	font-size:20px;
+	margin-bottom:100px;
+}
+
+.fa-quote-left{
+	color:#67C8FD;
+}
+
+/*side bar to the information*/
+.sideBar{
+	padding:10px;
+}
+.alumniImage{
+	border-radius:50%;
+	width:150px;
+	z-index:1;
+	margin:10px;
+	position:absolute;
+	top:430px;
+	left:18%;
+}
+.workTime{
+	background-color:#DADADA;
+	width:166px;
+	height:auto;
+	padding:20px;
+	margin:10px;
+}
+.workTime p{
+	padding:5px;
+}
+.bold{
+	font-weight:bolder;
+}
+.fa-check{
+	color:#68CAFD;
+}
+.talk{
+	color:black;
+	background-color:#FAD147;
+	padding:15px 32px;
+	border-radius:4px;
+}
+.talk:hover{
+	color:black;
+	background-color:#facb33;	
+	text-decoration:none;
+}
+/*Background coloring to the div holding all alumni information*/
+.ContainerPerState{
+	background-color:#ECECEC;
+	position:relative;
+	height:630px;
+}
+/*Alumni personal details*/
+.MyDetails{
+	color:black;
+	background-color:white;
+	width:580px;
+	max-height:630px;
+	position:absolute;
+	top:-60px;
+	left:500px;
+	padding:30px;
+	overflow:auto;
+}
+.header{
+	font-family:"PFDinTextCompProBold", Impact, Arial;
+	font-weight:bolder;
+}
+
+/*my experience section*/
+
+.MyExperience{
+	height:800px;
+	padding:50px;
+}
+
+.Title p{
+	font-weight:bolder;
+	font-size:48px;
+	font-family:"PFDinTextCompProBold", Impact, Arial;
+}
+.Title{
+	text-align:center;
+}
+
+.fa-ellipsis-v{
+	color:gray;
+}

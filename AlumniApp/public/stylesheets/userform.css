@@ -1,0 +1,15 @@
+.form-group{
+	margin:10px;
+}
+
+.submit{
+	color:white;
+	text-decoration:none;
+	background-color:lightgreen;
+	padding:10px 30px;
+	border-radius:5px;
+}
+.submit:hover{
+	color:black;
+	text-decoration:none;
+}
