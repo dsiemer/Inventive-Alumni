@@ -2,7 +2,7 @@ extends layout
 
 block content
     .mainFormContainer 
-        .form 
+        .signInForm 
             .f-row.login-from 
                 .f-column 
                     h2 Sign In 
@@ -12,21 +12,7 @@ block content
                         lable Password 
                         input.userInput#user-password(placeholder="Your Password" type="password") 
                         input(type="submit" name="commit" value="Sign In" data-disable-with="Sign In" class="signInbutton") 
-                        .f-row 
-                            .f-column 
-                                lable 
-                                    input(type="checkbox" value="1") 
-                            .f-column 
-                                div 
-                                    a(href="") Forgot your password? 
-                        .f-row 
-                            .f-column 
-                                div 
-                                    p Don't have an account? 
- 
-                            .f-column
-                                div
-                                    p Are you a part of a team?
-                                    a(href="")
-    
+                    div.form-group
+                      input.checkbox(type="checkbox", value="value").form-control
+                      span Remember me
 block footer

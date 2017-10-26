@@ -5,6 +5,7 @@
 .SideBar{
 	width:25%;
 	display:inline-block;
+    margin-left: 130px;
 }
 .SelectionContainer{
     margin: 0;
@@ -71,7 +72,8 @@
 }
 .card{
 	width:500px;
-	background-color:black;
+	margin-left:67px;
+
 }
 .cardInfo{
 	
@@ -79,6 +81,9 @@
 .CardLink{
 	display: block;
     margin-bottom: 4.5em;
+}
+.CardLink:hover{
+    text-decoration: none;
 }
 .LinkContent{
     transition: all 0.3s ease-in-out;
@@ -88,8 +93,19 @@
     box-shadow: 0 2px #dadada;
     position: relative;
 }
+.LinkContent:hover{
+    border: 1px solid #62C7FF;
+    box-shadow: 0 0px #dadada;
+}
 .CardImg{
-
+    border-radius: 100%;
+    background: #fef8e2;
+    height: 90px;
+    left: -46px;
+    margin-top: 25px;
+    position: absolute;
+    width: 90px;
+    z-index: 1;
 }
 .CardInnerContent{
     overflow: hidden;
@@ -97,15 +113,19 @@
     position: relative;
 }
 .CardNameOrgin{
- display:inline
+ display: flex;
+    justify-content: space-around
 }
 .CardRightCorner{
 	font-size: 32px;
     margin: 0;
-    width: 75%;
+    width: 30%;
+        display: flex;
+    justify-content: flex-end;
 }
 .Name{
  font-size: 32px;
+ text-transform:uppercase;
     margin: 0;
     width: 75%;
 }
@@ -113,13 +133,18 @@
 	color: #c3c3c3;
     letter-spacing: 0.75px;
     text-transform: uppercase;
+    font-size:12px;
 	
 }
-.CardQuote{
+.CardMainSkills{
     margin-top: 5px;
+        text-transform: uppercase;
 }
 .CardAchievements{
     margin-top: 15px;
+}
+.Achievement{
+    color:black;
 }
 .CardSkills{
 border-top: 1px solid #dadada;
@@ -135,4 +160,6 @@ border-top: 1px solid #dadada;
     background: #fbd334;
     color: black;
     padding: 7.6px 3.8px;
+    margin:5px 1px 5px 1px;
+    border-radius: 5px;
 }

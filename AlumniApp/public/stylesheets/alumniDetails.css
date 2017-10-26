@@ -88,9 +88,6 @@ p.summary{
 }
 
 /*side bar to the information*/
-.sideBar{
-	
-}
 .alumniImage{
 	border-radius:50%;
 	width:150px;
@@ -140,6 +137,7 @@ p.summary{
 .MyExperience{
 	height:800px;
 	padding:50px;
+	margin-left:15%;
 }
 
 .Title p{
@@ -153,14 +151,16 @@ p.summary{
 
 .fa-ellipsis-v{
 	color:gray;
+    text-shadow: 1px 1px 1px #ccc;
 }
 
 .wrapper{
 	padding:50px;
-	display:inline;
+	display:flex;
 }
 .QuestionColumn{
 	margin:10px;
+	max-width:150px;
 }
 .question{
 	border:solid 1px lightblue;
@@ -186,6 +186,42 @@ p.summary{
 
 .experienceIntro{
 	background-color:#FAD147;
+	max-width:580px;
+	height:auto;
+	padding:25px;	
+	margin:10px;
+	text-align:center;
+
+}
+.experienceIntro2{
+	background-color:yellow;
+	max-width:580px;
+	height:auto;
+	padding:25px;	
+	margin:10px;
+	text-align:center;
+
+}
+.experienceIntro3{
+	background-color:green;
+	max-width:580px;
+	height:auto;
+	padding:25px;	
+	margin:10px;
+	text-align:center;
+
+}
+.experienceIntro4{
+	background-color:blue;
+	max-width:580px;
+	height:auto;
+	padding:25px;	
+	margin:10px;
+	text-align:center;
+
+}
+.experienceIntro5{
+	background-color:pink;
 	max-width:580px;
 	height:auto;
 	padding:25px;	
