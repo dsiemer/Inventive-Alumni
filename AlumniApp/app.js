@@ -4,13 +4,64 @@ var favicon = require('serve-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
+var mongoose = require('mongoose');
+var bcrypt = require('bcrypt');
+var secret = "don't tell anyone"
+const SALT_ROUNDS = 10;
+var mongoosePaginate = require('mongoose-paginate');
+
 
 var index = require('./routes/index');
 var users = require('./routes/users');
 var alumniDetails = require('./routes/alumniDetails');
 
-
 var app = express();
+
+//mongodb
+var mongodbUri = 'mongodb://alumni:alumni@ds231725.mlab.com:31725/inventive_alumni';
+mongoose.Promise = global.Promise;
+mongoose.connect(mongodbUri, { useMongoClient: true });
+let db = mongoose.connection;
+//mongo error
+db.on('error', console.error.bind(console, 'connection error:'));
+//mongo open
+db.once('open', function() {console.log('db connection open')});
+
+var ObjectId = require('mongodb').ObjectID;
+
+var Schema = mongoose.Schema;
+var alumniSchema = new Schema({
+    name: String,
+    email: String,
+    descripton: String,
+    bio: String,
+    question: String,
+    answer: String,
+    graduationDate: Date,
+    comments: String,
+    projects: Object
+});
+applicationSchema.plugin(mongoosePaginate);
+
+var userSchema = new Schema({
+    email: String,
+    pwd: String,
+    lastlogin: Date,
+    isloggedin: Boolean,
+    isadmin: {
+        type: Boolean,
+        default: false
+    }
+});
+userSchema.plugin(mongoosePaginate);
+
+var Alumni = mongoose.model('Alumni', alumniSchema);
+var User = mongoose.model('User', userSchema);
+
+
+
+
+
 
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
@@ -48,3 +99,37 @@ app.use(function(err, req, res, next) {
 });
 
 module.exports = app;
+
+function hashpassword(pwd) {
+    return new Promise(function(resolve, reject) {
+        bcrypt.hash(pwd, SALT_ROUNDS, function(err, hash) {
+            if (err) reject(err)
+            resolve(hash)
+        })
+    })
+}
+
+function comparepasswords(hash1, hash2) {
+    return new Promise(function(resolve, reject) {
+        bcrypt.compare(hash1, hash2, function(err, tf) {
+            if (err) reject(err)
+            resolve(tf)
+        })
+    })
+}
+
+function getAlumniByQuery(req, res, next) {
+    // res.setHeader('Access-Control-Allow-Origin','*');
+    query = req.query
+    query.isdeleted = false
+    console.log("get: by query params " + JSON.stringify(query))
+    Application.find(query, function(err, applications) {
+        if (err) {
+            console.log(err)
+            res.send(500, err)
+        } else {
+            //console.log(applications)
+            res.send(applications)
+        }
+    })
+}
