@@ -60,9 +60,6 @@ var User = mongoose.model('User', userSchema);
 
 
 
-
-
-
 // view engine setup
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'pug');
@@ -121,15 +118,14 @@ function comparepasswords(hash1, hash2) {
 function getAlumniByQuery(req, res, next) {
     // res.setHeader('Access-Control-Allow-Origin','*');
     query = req.query
-    query.isdeleted = false
     console.log("get: by query params " + JSON.stringify(query))
-    Application.find(query, function(err, applications) {
+    Alumni.find(query, function(err, alumni) {
         if (err) {
             console.log(err)
             res.send(500, err)
         } else {
             //console.log(applications)
-            res.send(applications)
+            res.send(alumni)
         }
     })
 }
