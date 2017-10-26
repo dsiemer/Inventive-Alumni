@@ -1,13 +1,12 @@
 header
-    div
-        a(href="#")
-            div.logo
-                img.alumni-logo(src="")
-                img.alumni-logo(src="inventiveLogo.png")
-                h1 Inventive
-    div
-        a(href="#") Graduates
-        a(href="#") Jobs
-        a(href="#") Create Account
-        p or
-        a(href="#") Sign In
+  ul(class="nav nav-tabs")
+    a(href="/") 
+      img.alumni-logo(src="images/inventiveLogo.png")
+    li
+      a(data-toggle="tab" href="#") Sign in
+    li
+      a(data-toggle="tab" href="#") Create Account
+    li
+       a(data-toggle="tab" href="#") Jobs
+    li.active
+       a(data-toggle="tab" href="alumniDetails") Graduates

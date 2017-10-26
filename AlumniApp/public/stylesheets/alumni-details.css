@@ -10,6 +10,19 @@
 	border:solid black 0.5px;
 }
 
+/*icons used on the page*/
+.fa-ellipsis-v{
+	color:lightgrey;
+}
+
+.fa-quote-left{
+	color:#67C8FD;
+}
+
+.fa-check{
+	color:#68CAFD;
+}
+
 
 /*Box at the top with quote*/
 .mainContent{
@@ -23,7 +36,6 @@
 	height:auto;
 	padding:30px;
 	font-family:"Circular", Helvetica, sans-serif;
-    overflow: hidden;
 }
 p.summary{
 	max-width:750px;
@@ -32,11 +44,6 @@ p.summary{
 	font-size:20px;
 	margin-bottom:100px;
 }
-
-.fa-quote-left{
-	color:#67C8FD;
-}
-
 /*side bar to the information*/
 .sideBar{
 	padding:10px;
@@ -63,20 +70,16 @@ p.summary{
 .bold{
 	font-weight:bolder;
 }
-.fa-check{
-	color:#68CAFD;
-}
+
 .talk{
 	color:black;
 	background-color:#FAD147;
-	border-bottom:solid black 2px;
 	padding:15px 32px;
 	border-radius:4px;
 }
 .talk:hover{
 	color:black;
 	background-color:#facb33;
-	border-bottom:solid black 2px;	
 	text-decoration:none;
 }
 /*Background coloring to the div holding all alumni information*/
@@ -100,4 +103,14 @@ p.summary{
 .header{
 	font-family:"PFDinTextCompProBold", Impact, Arial;
 	font-weight:bolder;
+	font-size:50px;
+}
+.Title p{
+    font-family:"PFDinTextCompProBold", Impact, Arial;
+	font-weight:bolder;
+	font-size:50px;
+	text-align:center;
+}
+.Title{
+	text-align:center;
 }
