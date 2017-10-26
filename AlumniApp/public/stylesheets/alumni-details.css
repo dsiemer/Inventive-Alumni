@@ -114,3 +114,23 @@ p.summary{
 .Title{
 	text-align:center;
 }
+
+/*my experience section*/
+
+.MyExperience{
+	height:800px;
+	padding:50px;
+}
+
+.Title p{
+	font-weight:bolder;
+	font-size:48px;
+	font-family:"PFDinTextCompProBold", Impact, Arial;
+}
+.Title{
+	text-align:center;
+}
+
+.fa-ellipsis-v{
+	color:gray;
+}
