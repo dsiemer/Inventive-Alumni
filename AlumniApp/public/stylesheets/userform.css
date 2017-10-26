@@ -1,15 +1,25 @@
+.form{ 
+  background-color:#f3f3f3; 
+  max-width:40%; 
+  padding:20px; 
+  padding-bottom:18%; 
+} 
+
 .form-group{
 	margin:10px;
 }
 
-.submit{
-	color:white;
-	text-decoration:none;
-	background-color:lightgreen;
-	padding:10px 30px;
-	border-radius:5px;
+.submit{ 
+  color:black; 
+  text-decoration:none; 
+  border:solid #67C8FD 2px; 
+  padding:10px 30px; 
+  border-radius:5px; 
+  transition: background-color 0.5s ease-in; 
 }
 .submit:hover{
-	color:black;
+	color:white;
 	text-decoration:none;
+	background-color:#67C8FD;
 }
+

@@ -21,11 +21,13 @@ body {margin: 0;}
 .ContainerSummary{
 	color:#67C8FD;
 	background-color:black;
-	text-align:center;
 	height:auto;
 	padding:30px;
 	font-family:"Circular", Helvetica, sans-serif;
     overflow: hidden;
+}
+.quote{
+	text-align:center;
 }
 p.summary{
 	max-width:750px;

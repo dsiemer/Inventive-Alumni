@@ -1,62 +1,27 @@
 extends layout
+block headerSignIn
 
 block content
     .ContainerSummary
-        i(class="fa fa-quote-left fa-2x" aria-hidden="true")
-        p.summary I decided to shift careers into the area of web development because I wanted a job that challenge me intellectually, but gave me room to grow as an individual. What I have learned to appreciated the most is my ability develop skills in a diverse set of programming languages, something I could hardly imagine doing before GA.
+        .quote
+           i(class="fa fa-quote-left fa-2x" aria-hidden="true")
+           p.summary I decided to shift careers into the area of web development because I wanted a job that challenge me intellectually, but gave me room to grow as an individual. What I have learned to appreciated the most is my ability develop skills in a diverse set of programming languages, something I could hardly imagine doing before GA.
         img.alumniImage(alt="Alumni Photo" src="images/purplehair.jpg")
-        .ContainerPerState
-            .sideBar
-                .workTime
-                   p(class="bold") I'm looking for
-                   p Full time
-                   a(class="talk" href="#letsTalk") Let's Talk
-                .alumniWeb
-                   i(class="fa fa-dot-circle-o" aria-hidden="true")
-            .MyDetails
-                .SectionOne
-                    h1.header Alumni Name
-                    div.line
-                    h4 Alumni pitch
-                    hr.line2
-                .SectionTwo
-                    div
-                        .IconColumn
-                           img(src="")
-                        .MainColumn
-                            p text
-                    div
-                        .IconColumn
-                           img(src="")
-                        .MainColumn
-                            p text
-                    div
-                        .IconColumn
-                           img(src="")
-                        .MainColumn
-                            p text
-                    hr.line2
-                .SectionThree
-                    div
-                        h3 Skills
-                    div
-                        span My top three
-                        ul
-                            li Express
-                            li Pug
-                            li html
-                        span Some other skills
-                        ul
-                            li constant learner
-                            li cool dude
-                            li adaptive
-                            li team player
-                            li servant leader
-        .MyExperience
-            .Title
-                p MY EXPERIENCE
-                i(class="fa fa-ellipsis-v fa-2x" aria-hidden="true")
-            .QuestionColumn
+    .ContainerPerState
+        .sideBar
+            .workTime
+               p(class="bold") I'm looking for
+               p Full time
+               a(class="talk" href="#letsTalk") Let's Talk
+            .alumniWeb
+               i(class="fa fa-dot-circle-o" aria-hidden="true")
+        .MyDetails
+            .SectionOne
+                h1.header Alumni Name
+                div.line
+                h4 Alumni pitch
+                hr.line2
+            .SectionTwo
                 div
                     .IconColumn
                        img(src="")
