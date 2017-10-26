@@ -7,6 +7,7 @@
 .SideBar {
     width: 25%;
     display: inline-block;
+    margin-top:45px;
     margin-left: 130px;
 }
 
@@ -72,18 +73,35 @@
 
 
 
+
 /* Profile list */
 
 .ProfileList {
-    background-color: ;
     width: 60%;
     display: inline-block;
     margin-left: 1.6%;
+    margin-top:45px;
     flex-wrap: auto;
 }
 
-.card {
+.filterNote {
     width: 500px;
+    margin-left: 67px;
+    font-weight: bold;
+}
+.Showing{
+    width: 500px;
+    margin-left: 67px;
+}
+.Showing p{
+    font-family: "Circular",Helvetica,sans-serif;
+    font-size: 1rem;
+
+}
+   
+.card {
+    width: 77%;
+    height: 300px;
     margin-left: 67px;
 }
 
