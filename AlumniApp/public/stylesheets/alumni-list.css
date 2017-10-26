@@ -1,4 +1,7 @@
 /* side bar options */
+.MainContainer{
+        display: flex;
+}
 .SideBar{
 	width:30%;
 	display:inline-block;
@@ -56,6 +59,8 @@
 	background-color:;
 	width:60%;
 	display:inline-block;
+    margin-left:1.6%;
+    flex-wrap:auto;
 
 }
 .card{
