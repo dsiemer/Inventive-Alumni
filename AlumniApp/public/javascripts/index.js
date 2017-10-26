@@ -2,7 +2,6 @@ $(document).ready(function() {
     $("#Type1").click(function() {
         $("#Selection1").toggle()
         $('#Type1').toggleClass("ClosedTag");
-
     });
     $("#Type2").click(function() {
         $("#Selection2").toggle();
