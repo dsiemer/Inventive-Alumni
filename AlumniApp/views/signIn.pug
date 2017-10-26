@@ -3,17 +3,17 @@ extends layout
 block header
 
 block content
-    .mainContainer 
+    .mainFormContainer 
         .form 
             .f-row.login-from 
                 .f-column 
                     h2 Sign In 
                     form.new-user#new-user(action"" method="post") 
                         lable Email 
-                        input#user-email(placeholder="Your Email" autofocus="autofocus" type="email") 
+                        input.userInput#user-email(placeholder="Your Email" autofocus="autofocus" type="email") 
                         lable Password 
-                        input#user-password(placeholder="Your Password" type="password") 
-                        inpit(type="submit" name="commit" value="Sign In" class="button") 
+                        input.userInput#user-password(placeholder="Your Password" type="password") 
+                        input(type="submit" name="commit" value="Sign In" data-disable-with="Sign In" class="signInbutton") 
                         .f-row 
                             .f-column 
                                 lable 
