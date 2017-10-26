@@ -39,3 +39,19 @@
     text-decoration: none;
     width:100%;
 }
+.checkbox{
+	width: 20px;
+    position: relative;
+    margin: 20px auto;
+	max-width:20px;
+	border:solid #DADADA 1px;
+}
+.checkbox:focus{
+	outline:none;
+}
+
+
+
+
+
+
