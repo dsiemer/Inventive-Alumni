@@ -1,6 +1,7 @@
 ul.nav{
-	background-color:#333;
-	margin-bottom:5px;
+	  background-color:#00151A; 
+    padding-top: 2px; 
+  margin-bottom:4px; 
 }
 ul.nav li{
 	float:right;
@@ -47,8 +48,8 @@ label{
     vertical-align: baseline;
     background: transparent;
 }.signInHeader{
-    background-color:black;
-    height:76px;
+    background-color: #00151A; 
+    height:77px; 
 }
 
 .footerStyles{
