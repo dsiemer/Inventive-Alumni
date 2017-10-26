@@ -35,13 +35,25 @@ var alumniSchema = new Schema({
     email: String,
     descripton: String,
     bio: String,
-    question: String,
-    answer: String,
+    question1: String,
+    answer1: String,
+    question2: String,
+    answer2: String,
+    question3: String,
+    answer3: String,
     graduationDate: Date,
     comments: String,
-    projects: Object
+    projects: [
+    	{ 
+	    	image: String,
+	    	name: String,
+	    	description: String,
+	    	repository: String,
+	    	tags:[]
+    	}
+    ]
 });
-applicationSchema.plugin(mongoosePaginate);
+alumniSchema.plugin(mongoosePaginate);
 
 var userSchema = new Schema({
     email: String,
@@ -124,8 +136,51 @@ function getAlumniByQuery(req, res, next) {
             console.log(err)
             res.send(500, err)
         } else {
-            //console.log(applications)
+            //console.log(alumnis)
             res.send(alumni)
+        }
+    })
+}
+
+function getUserByEmail(req, res, next) {
+    // res.setHeader('Access-Control-Allow-Origin','*');
+    query = req.query
+    console.log("get: by query params " + JSON.stringify(query))
+    Alumni.find(query, function(err, alumni) {
+        if (err) {
+            console.log(err)
+            res.send(500, err)
+        } else {
+            //console.log(alumnis)
+            res.send(alumni)
+        }
+    })
+}
+
+function postAlumni(req, res, next) {
+    // res.setHeader('Access-Control-Allow-Origin','*');
+    console.log("post")
+    var alumni = new Alumni()
+    // var dateformatted = formatNow()
+    var date = new Date()
+
+    alumni.name = req.body.name
+    alumni.email = req.body.email
+    alumni.description = req.body.description
+    alumni.bio = req.body.bio
+    alumni.projects = req.body.projects
+    alumni.question = req.body.question
+    alumni.answer = req.body.answer
+    alumni.graduationDate = req.body.graduationDate
+    alumni.comments = req.body.comments
+
+    alumni.save(function(err, result) {
+        if (err) {
+            console.log(err)
+            res.send(500, err)
+        } else {
+            console.log(alumni.firstname + ' ' + alumni.lastname + ' saved to database')
+            res.send(result)
         }
     })
 }
