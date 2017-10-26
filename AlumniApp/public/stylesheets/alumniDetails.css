@@ -1,3 +1,5 @@
+/*Inventive blue #67C8FD*/
+
 @media only screen and (min-width: 600px){
     .MyDetails{color:black;
 	background-color:white;
@@ -30,6 +32,32 @@
 
 body {margin: 0;}
 
+hr{
+	border:solid 1px black;
+}
+/*All the link styles*/
+.link1{
+	color:black;
+	border-bottom:solid black 2px;
+	text-decoration:none;
+}
+.link1:hover{
+	color:#67C8FD;
+	text-decoration:none;
+	border-bottom:solid #67C8FD  2px;
+}
+
+.link2{
+	color:black;
+	background-color:#FAD147;
+	padding:15px 32px;
+	border-radius:4px;
+}
+.link2:hover{
+	color:black;
+	background-color:#facb33;	
+	text-decoration:none;
+}
 
 /*Box at the top with quote*/
 .mainContent{
@@ -37,7 +65,6 @@ body {margin: 0;}
 	flex-wrap:wrap;
 }
 .ContainerSummary{
-	color:#67C8FD;
 	background-color:black;
 	height:auto;
 	padding:30px;
@@ -53,6 +80,7 @@ p.summary{
 	line-height:35px;
 	font-size:20px;
 	margin-bottom:100px;
+	color:#67C8FD;
 }
 
 .fa-quote-left{
@@ -67,6 +95,13 @@ p.summary{
 	border-radius:50%;
 	width:150px;
 	margin-bottom:25px;
+}
+.alumniWeb .fa, p{
+	color:black;
+	display:inline-block;
+}
+.alumniWeb p{
+	padding-left:5px;
 }
 .workTime{
 	background-color:#DADADA;
@@ -84,17 +119,7 @@ p.summary{
 .fa-check{
 	color:#68CAFD;
 }
-.talk{
-	color:black;
-	background-color:#FAD147;
-	padding:15px 32px;
-	border-radius:4px;
-}
-.talk:hover{
-	color:black;
-	background-color:#facb33;	
-	text-decoration:none;
-}
+
 /*Background coloring to the div holding all alumni information*/
 .ContainerPerState{
 	background-color:#ECECEC;
@@ -130,6 +155,13 @@ p.summary{
 	color:gray;
 }
 
+.wrapper{
+	padding:50px;
+	display:inline;
+}
+.QuestionColumn{
+	margin:10px;
+}
 .question{
 	border:solid 1px lightblue;
 	max-width:180px;
@@ -150,4 +182,14 @@ p.summary{
 }
 .answer p.bold{
 	font-weight:bold;
+}
+
+.experienceIntro{
+	background-color:#FAD147;
+	max-width:580px;
+	height:auto;
+	padding:25px;	
+	margin:10px;
+	text-align:center;
+
 }
