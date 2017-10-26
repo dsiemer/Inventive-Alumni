@@ -1,6 +1,5 @@
 /* side bar options */
 .SideBar{
-	background-color:;
 	width:30%;
 	display:inline-block;
 }
@@ -41,7 +40,7 @@
     padding: .2em .9em;
 }
 .InputName{
-	    box-sizing: border-box;
+	box-sizing: border-box;
     flex-basis: 83.333%;
     max-width: 83.333%;
      flex: 0 0 auto;

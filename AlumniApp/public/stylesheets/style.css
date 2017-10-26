@@ -1,30 +1,29 @@
+ul.nav{
+	background-color:#333;
+	margin-bottom:5px;
+}
+ul.nav li{
+	float:right;
+}
+ul li a{
+	color:white;
+	text-decoration:none;
+	margin-top:38px;
+}
+ul li a:hover{
+	color:black;
+	text-decoration:none;
+}
 @media screen and (max-width: 600px){
     ul.nav li, 
     ul.nav li {float: none;}
     .alumni-logo{text-align:center;}
 }
 
-ul.nav li{
-	float:right;
-	padding-top:38px;
-}
-ul.nav li a{
-	color:white;
-}
-
-ul.nav li a:hover{
-	color:#333;
-}
-
-ul.nav{
-	background-color:#333;
-	margin-bottom:5px;
-	padding-top:10px;
-}
 .alumni-logo{
 	width:150px;
 	float:left;
-	margin-left:80px;
+	margin-left:50px;
 }
 div{
     margin: 0;
@@ -51,4 +50,7 @@ label{
     background-color:black;
 }
 
-
+.footerStyles{
+	background-color:#A9A9A9;
+	padding:15px;
+}

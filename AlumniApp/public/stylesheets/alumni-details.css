@@ -79,7 +79,7 @@ p.summary{
 }
 .talk:hover{
 	color:black;
-	background-color:#facb33;
+	background-color:#facb33;	
 	text-decoration:none;
 }
 /*Background coloring to the div holding all alumni information*/
@@ -113,4 +113,24 @@ p.summary{
 }
 .Title{
 	text-align:center;
+}
+
+/*my experience section*/
+
+.MyExperience{
+	height:800px;
+	padding:50px;
+}
+
+.Title p{
+	font-weight:bolder;
+	font-size:48px;
+	font-family:"PFDinTextCompProBold", Impact, Arial;
+}
+.Title{
+	text-align:center;
+}
+
+.fa-ellipsis-v{
+	color:gray;
 }

@@ -1,10 +1,9 @@
 extends layout
 
 block content
-    div
-        .ContainerSummary
-            i(class="fa fa-quote-left fa-2x" aria-hidden="true")
-            p.summary I decided to shift careers into the area of web development because I wanted a job that challenge me intellectually, but gave me room to grow as an individual. What I have learned to appreciated the most is my ability develop skills in a diverse set of programming languages, something I could hardly imagine doing before GA.
+    .ContainerSummary
+        i(class="fa fa-quote-left fa-2x" aria-hidden="true")
+        p.summary I decided to shift careers into the area of web development because I wanted a job that challenge me intellectually, but gave me room to grow as an individual. What I have learned to appreciated the most is my ability develop skills in a diverse set of programming languages, something I could hardly imagine doing before GA.
         img.alumniImage(alt="Alumni Photo" src="images/purplehair.jpg")
         .ContainerPerState
             .sideBar
@@ -59,44 +58,60 @@ block content
                 i(class="fa fa-ellipsis-v fa-2x" aria-hidden="true")
             .QuestionColumn
                 div
-                    img(src="")
+                    .IconColumn
+                       img(src="")
+                    .MainColumn
+                        p text
                 div
-                    div
-                        p Commodo sit ullamco anim consequat
-                    div
-                        h5 Laborum non ad esse occaecat reprehenderit tempor 
-                        p Proident sed quis deserunt in consequat reprehenderit velit irure cillum esse sunt anim tempor est deserunt commodo magna ullamco sint sint velit officia commodo et magna cillum adipisicing commodo id anim dolore minim veniam qui sunt sit anim eu.
+                    .IconColumn
+                       img(src="")
+                    .MainColumn
+                        p text
                 div
-                    div
-                        p Commodo sit ullamco anim consequat
-                    div
-                        h5 Laborum non ad esse occaecat reprehenderit tempor 
-                        p Proident sed quis deserunt in consequat reprehenderit velit irure cillum esse sunt anim tempor est deserunt commodo magna ullamco sint sint velit officia commodo et magna cillum adipisicing commodo id anim dolore minim veniam qui sunt sit anim eu.
+                    .IconColumn
+                       img(src="")
+                    .MainColumn
+                        p text
+                hr.line2
+            .SectionThree
                 div
-                    div
-                        p Commodo sit ullamco anim consequat
-                    div
-                        h5 Laborum non ad esse occaecat reprehenderit tempor 
-                        p Proident sed quis deserunt in consequat reprehenderit velit irure cillum esse sunt anim tempor est deserunt commodo magna ullamco sint sint velit officia commodo et magna cillum adipisicing commodo id anim dolore minim veniam qui sunt sit anim eu.
-            .ExperienceColumn
+                    h3 Skills
                 div
-                    div
-                        img(src="")
-                    div
-                        p aslfd
-                        p alfskj
-                    div
-                        p Ut sit dolore aliqua commodo qui ut sed excepteur exercitation elit adipisicing reprehenderit sed quis dolore dolore adipisicing enim tempor laboris ad sint minim mollit ullamco amet minim pariatur laboris id dolore consectetur enim ex dolore.
-                        a(href="#")
-                            lsdfj img(src="#")
-                div
-                    div
-                        img(src="#")
-                    div
-                        p project
-                        h4 project dragon fire
-                        p Quis duis deserunt amet quis enim quis id exercitation magna aute dolore occaecat in dolor deserunt enim ut ea exercitation dolore dolor et in veniam quis elit dolore non in adipisicing fugiat anim duis in est.
-                        a(href="")
-                            Launch projects img(src="#")
-
-
+                    span My top three
+                    ul
+                        li Express
+                        li Pug
+                        li html
+                    span Some other skills
+                    ul
+                        li constant learner
+                        li cool dude
+                        li adaptive
+                        li team player
+                        li servant leader
+    .MyExperience 
+            .Title 
+                p MY EXPERIENCE 
+                i(class="fa fa-ellipsis-v fa-2x" aria-hidden="true")
+            .QuestionColumn 
+                img(src="images/QandA.png")
+            .ExperienceColumn 
+                div 
+                    div 
+                        img(src="") 
+                    div 
+                        p aslfd 
+                        p alfskj 
+                    div 
+                        p Ut sit dolore aliqua commodo qui ut sed excepteur exercitation elit adipisicing reprehenderit sed quis dolore dolore adipisicing enim tempor laboris ad sint minim mollit ullamco amet minim pariatur laboris id dolore consectetur enim ex dolore. 
+                        a(href="#") 
+                            lsdfj img(src="#") 
+                div 
+                    div 
+                        img(src="#") 
+                    div 
+                        p project 
+                        h4 project dragon fire 
+                        p Quis duis deserunt amet quis enim quis id exercitation magna aute dolore occaecat in dolor deserunt enim ut ea exercitation dolore dolor et in veniam quis elit dolore non in adipisicing fugiat anim duis in est. 
+                        a(href="") 
+                            Launch projects img(src="#")     

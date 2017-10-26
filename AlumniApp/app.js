@@ -42,7 +42,7 @@ var alumniSchema = new Schema({
     comments: String,
     projects: Object
 });
-applicationSchema.plugin(mongoosePaginate);
+alumniSchema.plugin(mongoosePaginate);
 
 var userSchema = new Schema({
     email: String,
@@ -77,6 +77,7 @@ app.use('/', index);
 app.use('/users', users);
 app.use('/alumniDetails', alumniDetails);
 app.use('/signIn', signIn);
+app.use('/userform', userform);
 
 
 
