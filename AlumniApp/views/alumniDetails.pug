@@ -1,102 +1,103 @@
 extends layout
+block headerSignIn
 
 block content
-    div
-        .ContainerSummary
-            i(class="fa fa-quote-left fa-2x" aria-hidden="true")
-            p.summary I decided to shift careers into the area of web development because I wanted a job that challenge me intellectually, but gave me room to grow as an individual. What I have learned to appreciated the most is my ability develop skills in a diverse set of programming languages, something I could hardly imagine doing before GA.
-        img.alumniImage(alt="Alumni Photo" src="images/purplehair.jpg")
-        .ContainerPerState
-            .sideBar
-                .workTime
-                   p(class="bold") I'm looking for
-                   p Full time
-                   a(class="talk" href="#letsTalk") Let's Talk
-                .alumniWeb
-                   i(class="fa fa-dot-circle-o" aria-hidden="true")
-            .MyDetails
-                .SectionOne
-                    h1.header Alumni Name
-                    div.line
-                    h4 Alumni pitch
-                    hr.line2
-                .SectionTwo
-                    div
-                        .IconColumn
-                           img(src="")
-                        .MainColumn
-                            p text
-                    div
-                        .IconColumn
-                           img(src="")
-                        .MainColumn
-                            p text
-                    div
-                        .IconColumn
-                           img(src="")
-                        .MainColumn
-                            p text
-                    hr.line2
-                .SectionThree
-                    div
-                        h3 Skills
-                    div
-                        span My top three
-                        ul
-                            li Express
-                            li Pug
-                            li html
-                        span Some other skills
-                        ul
-                            li constant learner
-                            li cool dude
-                            li adaptive
-                            li team player
-                            li servant leader
-        .MyExperience
-            .Title
-                p MY EXPERIENCE
+    .ContainerSummary
+        .quote
+           i(class="fa fa-quote-left fa-2x" aria-hidden="true")
+           br
+           p.summary I decided to shift careers into the area of web development because I wanted a job that challenge me intellectually, but gave me room to grow as an individual. What I have learned to appreciated the most is my ability develop skills in a diverse set of programming languages, something I could hardly imagine doing before GA.
+    .ContainerPerState
+        .sideBar
+            img.alumniImage(alt="Alumni Photo" src="images/purplehair.jpg")
+            .workTime
+               p(class="bold") I'm looking for
+               p alumnistuff
+               br
+               a(class="link2" href="#letsTalk") Let's Talk
+            .alumniWeb
+               a(href="#")
+                 i(class="fa fa-dot-circle-o" aria-hidden="true")
+                 p Alumni Website
+            .alumniWeb
+               a(href="#")
+                 i(class="fa fa-facebook-official" aria-hidden="true")
+                 p Facebook
+            .alumniWeb
+               a(href="#")
+                 i(class="fa fa-twitter" aria-hidden="true")
+                 p Twitter
+            .alumniWeb
+               a(href="#")
+                 i(class="fa fa-github" aria-hidden="true")
+                 p Github
+        .MyDetails
+            .SectionOne
+                h1.header Alumni Name
+                div.line
+                h4 Alumni pitch
+                hr.line2
+            .SectionTwo
+                div
+                    .IconColumn
+                       img(src="")
+                    .MainColumn
+                        p text
+                div
+                    .IconColumn
+                       img(src="")
+                    .MainColumn
+                        p text
+                div
+                    .IconColumn
+                       img(src="")
+                    .MainColumn
+                        p text
+                hr.line2
+            .SectionThree
+                div
+                    h3 Skills
+                div
+                    span My top three
+                    ul
+                        li Express
+                        li Pug
+                        li html
+                    span Some other skills
+                    ul
+                        li constant learner
+                        li cool dude
+                        li adaptive
+                        li team player
+                        li servant leader
+    .MyExperience 
+            .Title 
+                p MY EXPERIENCE 
                 i(class="fa fa-ellipsis-v fa-2x" aria-hidden="true")
-            .QuestionColumn
-                div
-                    img(src="")
-                div
-                    div
-                        p Commodo sit ullamco anim consequat
-                    div
-                        h5 Laborum non ad esse occaecat reprehenderit tempor 
-                        p Proident sed quis deserunt in consequat reprehenderit velit irure cillum esse sunt anim tempor est deserunt commodo magna ullamco sint sint velit officia commodo et magna cillum adipisicing commodo id anim dolore minim veniam qui sunt sit anim eu.
-                div
-                    div
-                        p Commodo sit ullamco anim consequat
-                    div
-                        h5 Laborum non ad esse occaecat reprehenderit tempor 
-                        p Proident sed quis deserunt in consequat reprehenderit velit irure cillum esse sunt anim tempor est deserunt commodo magna ullamco sint sint velit officia commodo et magna cillum adipisicing commodo id anim dolore minim veniam qui sunt sit anim eu.
-                div
-                    div
-                        p Commodo sit ullamco anim consequat
-                    div
-                        h5 Laborum non ad esse occaecat reprehenderit tempor 
-                        p Proident sed quis deserunt in consequat reprehenderit velit irure cillum esse sunt anim tempor est deserunt commodo magna ullamco sint sint velit officia commodo et magna cillum adipisicing commodo id anim dolore minim veniam qui sunt sit anim eu.
-            .ExperienceColumn
-                div
-                    div
-                        img(src="")
-                    div
-                        p aslfd
-                        p alfskj
-                    div
-                        p Ut sit dolore aliqua commodo qui ut sed excepteur exercitation elit adipisicing reprehenderit sed quis dolore dolore adipisicing enim tempor laboris ad sint minim mollit ullamco amet minim pariatur laboris id dolore consectetur enim ex dolore.
-                        a(href="#")
-                            lsdfj img(src="#")
-                div
-                    div
-                        img(src="#")
-                    div
-                        p project
-                        h4 project dragon fire
-                        p Quis duis deserunt amet quis enim quis id exercitation magna aute dolore occaecat in dolor deserunt enim ut ea exercitation dolore dolor et in veniam quis elit dolore non in adipisicing fugiat anim duis in est.
-                        a(href="")
-                            Launch projects img(src="#")
-
-
+            .wrapper
+              .QuestionColumn 
+                  img(src="images/QandA.png")
+                  div.question
+                    p Why did the chicken cross the road?
+                  div.answer
+                    p.bold  We don't  really know
+                    p Because there was a wolf on his side.
+                  div.question
+                    p Why did the chicken cross the road?
+                  div.answer
+                    p.bold  We don't really know
+                    p Because there was a wolf on his side.
+                  div.question
+                    p Why did the chicken cross the road?
+                  div.answer
+                    p.bold  We don't really know
+                    p Because there was a wolf on his side.
+              .ExperienceColumn 
+                  div.experienceIntro
+                    p.bold Web Development Immersive at General Assembly
+                    p Aug 2017 - Oct 2017 | Washington, DC
+                    hr
+                    p I always had an eye for web designing and development while working as a QA Engineer/Software Tester, so I decided to join GA WDI bootcamp. The fast paced learning environment made me active and I realized how much I can do in a short span of time. All my projects were completed in less than 3 days and I enjoyed all of it.
+                    a(class="link1" href="#") Learn more about the course 
+                      i(class="fa fa-arrow-circle-o-right" aria-hidden="true")
+block footer                  

@@ -1,0 +1,34 @@
+extends layout
+
+block header
+
+block content
+    .mainFormContainer 
+        .form 
+            .f-row.login-from 
+                .f-column 
+                    h2 Sign In 
+                    form.new-user#new-user(action"" method="post") 
+                        lable Email 
+                        input.userInput#user-email(placeholder="Your Email" autofocus="autofocus" type="email") 
+                        lable Password 
+                        input.userInput#user-password(placeholder="Your Password" type="password") 
+                        input(type="submit" name="commit" value="Sign In" data-disable-with="Sign In" class="signInbutton") 
+                        .f-row 
+                            .f-column 
+                                lable 
+                                    input(type="checkbox" value="1") 
+                            .f-column 
+                                div 
+                                    a(href="") Forgot your password? 
+                        .f-row 
+                            .f-column 
+                                div 
+                                    p Don't have an account? 
+ 
+                            .f-column
+                                div
+                                    p Are you a part of a team?
+                                    a(href="")
+    
+block footer
