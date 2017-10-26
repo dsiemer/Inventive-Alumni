@@ -30,7 +30,8 @@ let db = mongoose.connection;
 //mongo error
 db.on('error', console.error.bind(console, 'connection error:'));
 //mongo open
-db.once('open', function() {console.log('db connection open')});
+db.once('open', function() {console.log('db connection open')
+                            console.log('Let the coding begin!')});
 
 var ObjectId = require('mongodb').ObjectID;
 
