@@ -49,6 +49,16 @@
 .checkbox:focus{
 	outline:none;
 }
+.lableCheckbox{
+    display: flex;
+    width: 200px;
+}
+.lableCheckbox p{
+        margin-top: 10px;
+}
+.forgotPassword{
+        margin-top: 10px;
+}
 
 
 
