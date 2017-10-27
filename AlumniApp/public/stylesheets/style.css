@@ -1,4 +1,9 @@
 /*Inventive header color #00151A*/
+@media screen and (max-width: 600px){
+    ul.nav li, 
+    ul.nav li {float: none;}
+    .alumni-logo{text-align:center;}
+}
 ul.nav{
   background-color:#00151A; 
   padding-top: 2px; 
@@ -22,12 +27,6 @@ ul li a:hover{
 	float:left;
 	margin-left:50px;
 }
-
-@media screen and (max-width: 600px){
-    ul.nav li, 
-    ul.nav li {float: none;}
-    .alumni-logo{text-align:center;}
-}
 div{
     margin: 0;
     padding: 0;
@@ -48,13 +47,9 @@ label{
     font-size: 100%;
     vertical-align: baseline;
     background: transparent;
-}.signInHeader{
-    background-color: #00151A; 
-    height:77px; 
 }
-
 .footerStyles{
 	background-color:#A9A9A9;
 	padding:15px;
-	margin-top:10px;
+	width:100%;
 }

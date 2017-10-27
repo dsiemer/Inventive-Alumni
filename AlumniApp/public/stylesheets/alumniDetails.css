@@ -7,7 +7,7 @@
 	max-height:630px;
 	position:absolute;
 	top:-60px;
-	left:500px;
+	left:50%;
 	padding:30px;}
     .sideBar{padding:10px;
 	z-index:1;
@@ -15,24 +15,6 @@
 	position:absolute;
 	top:-60px;
 	left:16%;}
-}
-
-/*Extras*/
-.line{
-	width:110px;
-	height:5px;
-	background-color:black;
-}
-.line2{
-	background-color:black;
-	color:black;
-	border:solid black 0.5px;
-}
-
-body {margin: 0;}
-
-hr{
-	border:solid 1px black;
 }
 /*All the link styles*/
 .link1{
@@ -82,23 +64,8 @@ p.summary{
 	color:#67C8FD;
 }
 
-.fa-quote-left{
-	color:#67C8FD;
-}
 
-/*side bar to the information*/
-.alumniImage{
-	border-radius:50%;
-	width:150px;
-	margin-bottom:25px;
-}
-.alumniWeb .fa, p{
-	color:black;
-	display:inline-block;
-}
-.alumniWeb p{
-	padding-left:5px;
-}
+
 .workTime{
 	background-color:#DADADA;
 	width:166px;
@@ -112,9 +79,6 @@ p.summary{
 .bold{
 	font-weight:bolder;
 }
-.fa-check{
-	color:#68CAFD;
-}
 
 /*Background coloring to the div holding all alumni information*/
 .ContainerPerState{
@@ -127,7 +91,18 @@ p.summary{
 	font-family:"PFDinTextCompProBold", Impact, Arial;
 	font-weight:bolder;
 }
-
+.alumniImage{
+	border-radius:50%;
+	width:150px;
+	margin-bottom:25px;
+}
+.alumniWeb .fa, p{
+	color:black;
+	display:inline-block;
+}
+.alumniWeb p{
+	padding-left:5px;
+}
 /*my experience section*/
 
 .MyExperience{
@@ -144,11 +119,6 @@ p.summary{
 .Title{
 	text-align:center;
 	margin-left:6%;
-}
-
-.vertical-dots{
-	max-width:18px;
-	margin-bottom:5px;
 }
 
 .wrapper{
@@ -199,8 +169,23 @@ p.summary{
 	padding:25px;	
 	margin:10px;
 	text-align:center;
-
 }
+/*Extras/////////////////////////////////////*/
+hr{border:solid 1px black;}
+
+.line{
+	width:110px;
+	height:5px;
+	background-color:black;
+}
+.line2{
+	background-color:black;
+	color:black;
+	border:solid black 0.5px;
+}
+
+body {margin: 0;}
+/*Icons//////////////////////////////////////*/
 .briefCase{
 	background-color:#FAD147;
 	padding:10px;
@@ -208,3 +193,15 @@ p.summary{
 	position:relative;
 	top:-38px;
 }
+.fa-quote-left{
+	color:#67C8FD;
+}
+.fa-check{
+	color:#68CAFD;
+}
+.vertical-dots{
+	max-width:18px;
+	margin-bottom:5px;
+}
+
+
