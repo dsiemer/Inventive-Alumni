@@ -49,7 +49,22 @@ label{
     background: transparent;
 }
 .footerStyles{
-	background-color:#A9A9A9;
+	background-color:#00151A;
 	padding:15px;
 	width:100%;
 }
+.footerStyles p{
+    color:white;
+    content:"&#9829;";
+
+  }
+  #FooterHeart{
+    color:red;
+  }
+  #FooterLink{
+    color:#62C7FF;
+  }
+  #FooterLink:hover{
+    color:#62C7FF;
+    text-decoration: none;
+  }
