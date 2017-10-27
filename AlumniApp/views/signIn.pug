@@ -13,6 +13,21 @@ block content
                         input.userInput#user-password(placeholder="Your Password" type="password") 
                         input(type="submit" name="commit" value="Sign In" data-disable-with="Sign In" class="signInbutton") 
                     div.form-group
-                      input.checkbox(type="checkbox", value="value").form-control
-                      span Remember me
+                        div
+                            label.lableCheckbox
+                              input.checkbox(type="checkbox", value="1").form-control
+                              p Remember me
+                        div
+                            a.forgotPasswordChoiceLink(href="") Forgot your password?
+                    div.form-group
+                        div#ChoiceOne.Choices
+                            div.Choice
+                                p.ChoiceText Don't have an account?
+                                br
+                                a.ChoiceLink(href="/userForm") Sign Up
+                        div.Choices
+                            div.Choice
+                                p.ChoiceText Are you part of a team?
+                                br
+                                a.ChoiceLink(href="/signIn") Sign In
 block footer
