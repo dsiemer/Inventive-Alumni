@@ -1,9 +1,16 @@
+/*Inventive header color #00151A*/
+@media screen and (max-width: 600px){
+    ul.nav li, 
+    ul.nav li {float: none;}
+    .alumni-logo{text-align:center;}
+}
 ul.nav{
-	background-color:#333;
-	margin-bottom:5px;
+  background-color:#00151A; 
+  padding-top: 2px;  
 }
 ul.nav li{
 	float:right;
+	padding-right:10px;
 }
 ul li a{
 	color:white;
@@ -14,12 +21,6 @@ ul li a:hover{
 	color:black;
 	text-decoration:none;
 }
-@media screen and (max-width: 600px){
-    ul.nav li, 
-    ul.nav li {float: none;}
-    .alumni-logo{text-align:center;}
-}
-
 .alumni-logo{
 	width:150px;
 	float:left;
@@ -46,12 +47,24 @@ label{
     vertical-align: baseline;
     background: transparent;
 }
-.ClosedTag{
-    background-color:black;
-    color:white;
-}
-
 .footerStyles{
-	background-color:#A9A9A9;
+	background-color:#00151A;
 	padding:15px;
+	width:100%;
 }
+.footerStyles p{
+    color:white;
+    content:"&#9829;";
+
+  }
+  #FooterHeart{
+    color:red;
+  }
+  #FooterLink{
+    color:#62C7FF;
+    text-decoration: none;
+  }
+  #FooterLink:hover{
+    color:#62C7FF;
+    text-decoration: none;
+  }

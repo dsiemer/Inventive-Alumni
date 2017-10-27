@@ -6,7 +6,8 @@ block content
             .SelectionContainer
                 .SelectionType
                     .TypeName.OpenTag#Type1
-                       h3 Job Role
+                       p Job Role 
+                       i(class="fa fa-minus one" aria-hidden="true fa-small")
                     .SelectionOptions#Selection1
                        div
                            input.SelectOption(type="checkbox")
@@ -32,7 +33,8 @@ block content
                     .SelectionOptionEnd
                 .SelectionType
                     .TypeName.OpenTag#Type2
-                        h3 Seeking
+                        p Seeking
+                        i(class="fa fa-minus two" aria-hidden="true fa-small")
                     .SelectionOptions#Selection2
                        div
                            input.SelectOption(type="checkbox")
@@ -45,7 +47,8 @@ block content
                            lable.InputName Apprentice
                 .SelectionType
                     .TypeName.OpenTag#Type3
-                        h3 Location
+                        p Location
+                        i(class="fa fa-minus three" aria-hidden="true fa-small")
                     .SelectionOptions#Selection3
                        div
                            input.SelectOption(type="search" placeholder="search for a location")
@@ -54,7 +57,8 @@ block content
                            lable.InputName Show alumni willing to relocate
                 .SelectionTag
                     .TypeName.OpenTag#Type4
-                        h3 GA Course History
+                        p GA Course History
+                        i(class="fa fa-minus four" aria-hidden="true fa-small")
                     .SelectionOptions#Selection4
                        div
                            input.SelectOption(type="select" placeholder="select...")
@@ -63,35 +67,49 @@ block content
                            lable.InputName Need Update
                 .SelectionType
                     .TypeName.OpenTag#Type5
-                        h3 Skills
+                        p Skills
+                        i(class="fa fa-minus five" aria-hidden="true fa-small")
                     .SelectionOptions#Selection5
                        div
                            input.SelectOption(type="search" placeholder="Search or select...")
                 .SelectionOptions
                    .loneOption
                        input.SelectOption(type="checkbox")
-                       lable.InputName Show alumni not looking for work
-
-
-
+                       lable.InputName Show alumni not looking for work       
         .ProfileList
-            .card
-                .cardInfo
-                   a.CardLink(href="alumniDetails") 
-                       .LinkContent
-                           img.CardImg(src="../public/images/drake.jpg")
-                           .CardInnerContent
-                               .CardNameOrgin
-                                   h2.Name Drake Siemer
-                                   .CardRightCorner
-                                       p.Orgin texas
-                               div.CardQuote
-                                   dedicated learner
-                               div.CardAchievements
-                                   div
-                                       img(src="")
-                                   div
-                                       p working at inventive
-                               ul.CardSkills
-                                   li.SkillItem react
-                                   li.SkillItem node
+            div
+                div
+                    p.filterNote No active filters, displaying all results
+                    div.Showing
+                        p Showing  1-20 of  1472
+            
+
+            -for(i=0; i < 3; i++)
+                .card
+                    .cardInfo
+                       a.CardLink(href="alumniDetails") 
+                           .LinkContent
+                               img.CardImg(src="images/drake.jpg")
+                               .CardInnerContent
+                                   .CardNameOrgin
+                                       h3.Name Drake Siemer
+                                       .CardRightCorner
+                                           p.Orgin texas 
+                                               i.Orgin-marker(class="fa fa-map-marker" aria-hidden="true fa-small")
+                                   div.CardMainSkills
+                                       p dedicated learner | HardWorker | team player
+                                   div.CardAchievements
+                                       div
+                                           i(class="fa fa-briefcase Achievement" aria-hidden="true fa-small")
+                                           p &nbsp; Where I work
+                                       div
+                                           i(class="fa fa-graduation-cap Achievement" aria-hidden="true fa-small")
+                                           p &nbsp;Where I went for school
+                                   ul.CardSkills
+                                       li.SkillItem HTML
+                                       li.SkillItem Node
+                                       li.SkillItem JavaScript
+                                       li.SkillItem CSS
+                                       li.SkillItem SASS
+                                       li.SkillItem Pug
+                                       li.SkillItem Express

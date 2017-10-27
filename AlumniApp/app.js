@@ -14,6 +14,11 @@ var mongoosePaginate = require('mongoose-paginate');
 var index = require('./routes/index');
 var users = require('./routes/users');
 var alumniDetails = require('./routes/alumniDetails');
+var userform = require('./routes/userform');
+var signIn = require('./routes/signIn');
+var userform = require('./routes/userform');
+
+
 
 var app = express();
 
@@ -26,8 +31,51 @@ let db = mongoose.connection;
 //mongo error
 db.on('error', console.error.bind(console, 'connection error:'));
 //mongo open
+<<<<<<< HEAD
 db.once('open', function() {
 	console.log('db readystate: '+ db.readyState);
+=======
+db.once('open', function() {console.log('db connection open')
+                            console.log('Let the coding begin!')});
+
+var ObjectId = require('mongodb').ObjectID;
+
+var Schema = mongoose.Schema;
+var alumniSchema = new Schema({
+    name: String,
+    email: String,
+    descripton: String,
+    bio: String,
+    question1: String,
+    answer1: String,
+    question2: String,
+    answer2: String,
+    question3: String,
+    answer3: String,
+    graduationDate: Date,
+    comments: String,
+    projects: [
+    	{ 
+	    	image: String,
+	    	name: String,
+	    	description: String,
+	    	repository: String,
+	    	tags:[]
+    	}
+    ]
+});
+alumniSchema.plugin(mongoosePaginate);
+
+var userSchema = new Schema({
+    email: String,
+    pwd: String,
+    lastlogin: Date,
+    isloggedin: Boolean,
+    isadmin: {
+        type: Boolean,
+        default: false
+    }
+>>>>>>> 771232614a3abfe0fbceff57742f0ed3a5472b3f
 });
 var api = require('./controllers/api.js');
 
@@ -47,9 +95,15 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use('/', index);
 app.use('/users', users);
 app.use('/alumniDetails', alumniDetails);
+<<<<<<< HEAD
 // app.use('/userform', userform);
 app.use('/getUsers',api.getUsers);
 app.use('/getAlumni',api.getAlumni);
+=======
+app.use('/signIn', signIn);
+app.use('/userform', userform);
+
+>>>>>>> 771232614a3abfe0fbceff57742f0ed3a5472b3f
 
 
 // catch 404 and forward to error handler
