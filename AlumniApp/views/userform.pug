@@ -1,30 +1,23 @@
 extends layout
 
 block content
-    .form
+    .SignUpContent
+        h3.bold Sign Up    
         form(method="POST")
-            .formContent
-                div.content
-                    div.form-group-2
-                        // label(for="firstname") Firstname
-                        input.name(type="text" class="form-control" id="firstname" placeholder="Jane")
-                    div.form-group-2
-                        // label(for="lastname") Lastname
-                        input(type="text" class="form-control" id="lastname" placeholder="Doe")
-
-                    div.form-group
-                        // label(for="email") Email
-                        input(type="email" class="form-control" id="email" placeholder="name@gmail.com")
-
-                    div.form-group
-                        // label(for="pwd") Password
-                        input(type="password" class="form-control" id="pwd" placeholder="********")
-
-                    div.form-group
-                        // label(for="pwd") Confirm Password
-                        input(type="password" class="form-control" id="pwd" placeholder="Confirm Password")
-
-                    div.form-group
-                        p.lastlogin Your last visit was Date.
-                    div.form-group
-                        a(class="submit" type="submit" href="alumniDetails") Create Account
+            label.signUpLabel(for="firstname") First Name
+            br
+            input.signUpInput2(id="firstname" placeholder="First Name")
+            input.signUpInput2(id="lastname" placeholder="Last Name")
+            div.form-group
+                label.signUpLabel(for="email") Email
+                br
+                input.signUpInput(id="email" placeholder="Email")
+            div.form-group
+                label.signUpLabel(for="password") Password
+                br
+                input.signUpInput(id="password" type="password" placeholder="Your Password")
+            div.form-group
+                label.signUpLabel(for="confirmPassword") Password confirmation
+                br
+                input.signUpInput(id="confirmPassword" type="password" placeholder="Confirm your Password")
+            div.form-group
