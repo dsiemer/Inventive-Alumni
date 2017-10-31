@@ -130,6 +130,19 @@ p.summary {
     margin: 0;
     padding: 0;
 }
+.SkillItem {
+    border-width: 0;
+    display: inline-block;
+    margin: 5px 2px 0 0;
+    background: #fbd334;
+    color: black;
+    padding: 7.6px 5.8px;
+    margin: 5px 1px 5px 1px;
+    border-radius: 5px;
+}
+.SecondSkillItem{
+	background-color: #fff3c4;
+}
 
 
 /*Alumni personal details*/
