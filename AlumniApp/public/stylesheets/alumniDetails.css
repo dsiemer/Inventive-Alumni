@@ -1,207 +1,291 @@
 /*Inventive blue #67C8FD*/
 
-@media only screen and (min-width: 600px){
-    .MyDetails{color:black;
-	background-color:white;
-	width:580px;
-	max-height:630px;
-	position:absolute;
-	top:-60px;
-	left:50%;
-	padding:30px;}
-    .sideBar{padding:10px;
-	z-index:1;
-	margin:30px;
-	position:absolute;
-	top:-60px;
-	left:16%;}
-}
-/*All the link styles*/
-.link1{
-	color:black;
-	border-bottom:solid black 2px;
-	text-decoration:none;
-}
-.link1:hover{
-	color:#67C8FD;
-	text-decoration:none;
-	border-bottom:solid #67C8FD  2px;
+@media only screen and (min-width: 600px) {
+    .MyDetails {
+        color: black;
+        background-color: white;
+        width: 580px;
+        max-height: 630px;
+        position: absolute;
+        top: -60px;
+        left: 35%;
+        padding: 30px;
+    }
+    .sideBar {
+        padding: 10px;
+        z-index: 1;
+        margin: 30px;
+        position: absolute;
+        top: -60px;
+        left: 16%;
+    }
 }
 
-.link2{
-	color:black;
-	background-color:#FAD147;
-	padding:15px 32px;
-	border-radius:4px;
+
+/*All the link styles*/
+
+.link1 {
+    color: black;
+    border-bottom: solid black 2px;
+    text-decoration: none;
 }
-.link2:hover{
-	color:black;
-	background-color:#facb33;	
-	text-decoration:none;
+
+.link1:hover {
+    color: #67C8FD;
+    text-decoration: none;
+    border-bottom: solid #67C8FD 2px;
 }
+
+.link2 {
+    color: black;
+    background-color: #FAD147;
+    padding: 15px 32px;
+    border-radius: 4px;
+}
+
+.link2:hover {
+    color: black;
+    background-color: #facb33;
+    text-decoration: none;
+}
+
 
 /*Box at the top with quote*/
-.mainContent{
-	display:flex;
-	flex-wrap:wrap;
+
+.mainContent {
+    display: flex;
+    flex-wrap: wrap;
 }
-.ContainerSummary{
-	background-color:black;
-	height:auto;
-	padding:30px;
-	font-family:"Circular", Helvetica, sans-serif;
+
+.ContainerSummary {
+    background-color: black;
+    height: auto;
+    padding: 30px;
+    font-family: "Circular", Helvetica, sans-serif;
     overflow: hidden;
 }
-.quote{
-	text-align:center;
+
+.quote {
+    text-align: center;
 }
-p.summary{
-	max-width:750px;
-	margin:auto;
-	line-height:35px;
-	font-size:20px;
-	margin-bottom:100px;
-	color:#67C8FD;
+
+p.summary {
+    max-width: 750px;
+    margin: auto;
+    line-height: 35px;
+    font-size: 20px;
+    margin-bottom: 100px;
+    color: #67C8FD;
 }
 
 
 
-.workTime{
-	background-color:#DADADA;
-	width:166px;
-	height:auto;
-	padding:20px;
-	margin:10px;
+.workTime {
+    background-color: #DADADA;
+    width: 166px;
+    height: auto;
+    padding: 20px;
+    margin: 10px 10px 10px 0px;
 }
-.workTime p{
-	padding:5px;
+
+.workTime p {
+    padding: 5px;
 }
-.bold{
-	font-weight:bolder;
+
+.bold {
+    font-weight: bolder;
 }
+
 
 /*Background coloring to the div holding all alumni information*/
-.ContainerPerState{
-	background-color:#ECECEC;
-	position:relative;
-	height:630px;
+
+.ContainerPerState {
+    background-color: #ECECEC;
+    position: relative;
+    height: 630px;
 }
+
+.infoRow {
+    width: 100%;
+    margin-bottom: 0.6em;
+    min-height: 2em;
+}
+
+.IconColumn {
+    width: 5%;
+    text-align: center;
+    float: left;
+    display: inline-block;
+}
+
+.MainColumn {
+    padding-left: 0.8em;
+    width: 95%;
+    float: left;
+    display: inline-block;
+}
+
+.SkillList{
+	list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+
 /*Alumni personal details*/
-.header{
-	font-family:"PFDinTextCompProBold", Impact, Arial;
-	font-weight:bolder;
+
+.header {
+    font-family: "PFDinTextCompProBold", Impact, Arial;
+    font-weight: bolder;
 }
-.alumniImage{
-	border-radius:50%;
-	width:150px;
-	margin-bottom:25px;
+
+.alumniImage {
+    border-radius: 50%;
+    width: 150px;
+    margin-bottom: 25px;
 }
-.alumniWeb .fa, p{
-	color:black;
-	display:inline-block;
+
+.alumniWeb .fa,
+p {
+    color: black;
+    display: inline-block;
 }
-.alumniWeb p{
-	padding-left:5px;
+
+.alumniWeb p {
+    padding-left: 5px;
 }
+
+
 /*my experience section*/
 
-.MyExperience{
-	height:800px;
-	padding:50px;
-	margin-left:15%;
+.MyExperience {
+    height: 800px;
+    padding: 50px;
+    margin-left: 15%;
 }
 
-.Title p{
-	font-weight:bolder;
-	font-size:48px;
-	font-family:"PFDinTextCompProBold", Impact, Arial;
-}
-.Title{
-	text-align:center;
-	margin-left:6%;
+.Title h2 {
+    font-weight: bolder;
+    font-size: 48px;
+    font-family: "PFDinTextCompProBold", Impact, Arial;
 }
 
-.wrapper{
-	padding:50px;
-	display:flex;
-}
-.QuestionColumn{
-	margin:10px;
-	max-width:150px;
-	line-height:15px;
-}
-.QuestionColumn p{
-	color:#818181;
-	font-size:10px;
-}
-.question{
-	border:solid 1px #4CA4F5;
-	max-width:180px;
-	max-height:auto;
-	padding:13px;
-	margin:2px;
-}
-.question p{
-	color: #4CA4F5;
-	font-weight:bold;
-
-}
-.answer{
-	padding:13px;
-	max-width:180px;
-	min-height:auto;
-	border:solid 1px lightgrey;
-	margin:2px;
-	margin-bottom:50px;
-}
-.answer p.bold{
-	font-weight:bold;
+.Title {
+    text-align: center;
+    margin-left: 4%;
 }
 
-.ExperienceColumn{
-	text-align:center;
+.wrapper {
+    padding-left: 50px;
+    display: flex;
 }
 
-.experienceIntro{
-	background-color:#FAD147;
-	max-width:580px;
-	height:auto;
-	padding:25px;	
-	margin:10px;
-	text-align:center;
+.QuestionColumn {
+    margin: 10px;
+    max-width: 150px;
+    line-height: 15px;
 }
+
+.QuestionColumn p {
+    color: #818181;
+    font-size: 10px;
+}
+
+.question {
+    border: solid 1px #4CA4F5;
+    max-width: 180px;
+    max-height: auto;
+    padding: 13px;
+    margin: 2px;
+}
+
+.question p {
+    color: #4CA4F5;
+    font-weight: bold;
+}
+
+.answer {
+    padding: 13px;
+    max-width: 180px;
+    min-height: auto;
+    border: solid 1px lightgrey;
+    margin: 2px;
+    margin-bottom: 50px;
+}
+
+.answer p.bold {
+    font-weight: bold;
+}
+
+.ExperienceColumn {
+    text-align: center;
+}
+
+.experienceIntro {
+    background-color: #FAD147;
+    max-width: 580px;
+    height: auto;
+    padding: 25px;
+    margin: 10px;
+    text-align: center;
+}
+
+.Secondary {
+    background-color: #f6f6f6;
+}
+
+
 /*Extras/////////////////////////////////////*/
-hr{border:solid 1px black;}
 
-.line{
-	width:110px;
-	height:5px;
-	background-color:black;
-}
-.line2{
-	background-color:black;
-	color:black;
-	border:solid black 0.5px;
+hr {
+    border: solid 1px black;
 }
 
-body {margin: 0;}
+.line {
+    width: 110px;
+    height: 5px;
+    background-color: black;
+}
+
+.line2 {
+    background-color: black;
+    color: black;
+    border: solid black 0.5px;
+}
+
+body {
+    margin: 0;
+}
+
+
 /*Icons//////////////////////////////////////*/
-.briefCase{
-	background-color:#FAD147;
-	padding:10px;
-	border-radius:18px;
-	position:relative;
-	top:-38px;
-}
-.fa-quote-left{
-	color:#67C8FD;
-}
-.fa-check{
-	color:#68CAFD;
-}
-.vertical-dots{
-	max-width:18px;
-	margin-bottom:5px;
+
+.briefCase {
+    background-color: #FAD147;
+    padding: 10px;
+    border-radius: 18px;
+    position: relative;
+    top: -38px;
 }
 
+.SecondbriefCase {
+    background-color: #F6f6F6;
+    padding: 10px;
+    border-radius: 18px;
+    position: relative;
+    top: -38px;
+}
 
+.fa-quote-left {
+    color: #67C8FD;
+}
+
+.fa-check {
+    color: #68CAFD;
+}
+
+.vertical-dots {
+    max-height: 20px;
+    max-width: 18px;
+    margin-bottom: 12px;
+}

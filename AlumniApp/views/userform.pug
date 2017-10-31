@@ -1,15 +1,23 @@
 extends layout
 
 block content
-  .form
-    form(method="POST")
-        div.form-group
-           label(for="formGroupExampleInput") Email
-           input(type="text" class="form-control" id="email" placeholder="name@gmail.com")
-        div.form-group
-           label(for="pwd") Password
-           input(type="text" class="form-control" id="pwd" placeholder="********")
-        div.form-group
-           p.lastlogin Your last visit was Date.
-        div.form-group
-           a(class="submit" type="submit" href="alumniDetails") Create Account
+    .SignUpContent
+        h3.bold Sign Up    
+        form(method="POST")
+            label.signUpLabel(for="firstname") First Name
+            br
+            input.signUpInput2(id="firstname" placeholder="First Name")
+            input.signUpInput2(id="lastname" placeholder="Last Name")
+            div.form-group
+                label.signUpLabel(for="email") Email
+                br
+                input.signUpInput(id="email" placeholder="Email")
+            div.form-group
+                label.signUpLabel(for="password") Password
+                br
+                input.signUpInput(id="password" type="password" placeholder="Your Password")
+            div.form-group
+                label.signUpLabel(for="confirmPassword") Password confirmation
+                br
+                input.signUpInput(id="confirmPassword" type="password" placeholder="Confirm your Password")
+            div.form-group
